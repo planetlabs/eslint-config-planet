@@ -74,6 +74,25 @@ Then your minimal `.eslintrc` would look like this:
 }
 ```
 
+### Development
+
+To add another configuration profile, add a JSON file to the `config` directory (e.g. `config/new-config.json`).  This follows the format of an ESLint config file *except* that it does not have an `extends` property.  Add a script named like your profile to the root of the repository (e.g. `new-config.js`).  This script should merge the new configuration profile with whatever profile it extends.  Having the files structured this way allows consumers to use the new profile in their own `.eslintrc` files (e.g. with `"extends": "planet/new-config"`).
+
+You can add tests for your new profile or changes to an existing profile.  Ensure that tests pass with any changes.
+
+    npm test
+
+After adding a new config profile or modifying an existing one, publish a new version of the package.  Adding a new "error" level rule constitutes a major release.  A new profile or non-breaking modification to an existing profile (e.g. a "warning" level rule) can be a minor release.
+
+Publishing a new minor release would look like this:
+
+    # commit and push any changes first
+    npm version minor # this bumps the package.json version number and tags
+    git push --tags origin master
+    npm publish
+
+[![Current Status](https://secure.travis-ci.org/planetlabs/eslint-config-planet.png?branch=master)](https://travis-ci.org/planetlabs/eslint-config-planet)
+
 ### License
 
 © Planet Labs, Inc.
