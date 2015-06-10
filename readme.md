@@ -18,6 +18,34 @@ Next, create a `.eslintrc` file at the root of your project.  At a minimum, this
 
 See the ESLint [configuration guide](http://eslint.org/docs/user-guide/configuring) for details on additional configuration options.  Any rules configured in your `.eslintrc` file will override those provided by the `eslint-config-planet` package.
 
+### Use
+
+You should run the linter as part of (or before) your tests.  Assuming tests are run before any proposed changes are merged, this will ensure coding standards are maintained in your default branch.  Using [npm scripts](https://docs.npmjs.com/misc/scripts) is the preferred way to run the linter without requiring it to be a global dependency.  Assuming you want to lint all JavaScript files in your project, add the following entry to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "pretest": "eslint ."
+  }
+}
+```
+
+This will run ESLint on all JavaScript files in your project (excluding any in `node_modules`) using your `.eslintrc` config when tests are run:
+
+    npm test
+
+See the ESLint [CLI guide](http://eslint.org/docs/user-guide/command-line-interface) for additional options when running ESLint.
+
+In addition to running the linter when your tests are run, you should configure your editor to run the linter as well.  For Sublime Text, install the [SublimeLinter-contrib-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint) plugin.
+
+The `SublimeLinter` plugin can be configured to show lint errors on save.  Edit your `SublimeLinter` user preferences to include the following:
+
+```json
+  {
+    "show_errors_on_save": true
+  }
+```
+
 ### Profiles
 
 The `eslint-config-planet` package includes a number of ESLint configuration profiles for different types of projects.
