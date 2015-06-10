@@ -1,6 +1,6 @@
 ## eslint-config-planet
 
-This package provides shareable [ESLint](http://eslint.org/) configurations for JavaScript projects that conform with Planet Labs' lint configurations.
+This package provides shareable [ESLint](http://eslint.org/) configurations for JavaScript projects that conform with Planet Labs' coding style.
 
 ### Installation
 
