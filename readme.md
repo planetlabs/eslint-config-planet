@@ -25,12 +25,12 @@ You should run the linter as part of (or before) your tests.  Assuming tests are
 ```json
 {
   "scripts": {
-    "pretest": "eslint ."
+    "pretest": "eslint src"
   }
 }
 ```
 
-This will run ESLint on all JavaScript files in your project (excluding any in `node_modules`) using your `.eslintrc` config when tests are run:
+With this `pretest` entry in your `package.json`, ESLint will run on all JavaScript files in the `src` directory of your project using your `.eslintrc` config when tests are run:
 
     npm test
 
