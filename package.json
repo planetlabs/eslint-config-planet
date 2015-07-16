@@ -7,9 +7,13 @@
     "test": "eslint . && lab --threshold 100 test"
   },
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/planetlabs/eslint-config-planet.git"
+  },
   "devDependencies": {
     "code": "^1.4.0",
-    "eslint": "^0.22.1",
+    "eslint": "^1.0.0-rc-1",
     "lab": "^5.10.0"
   }
 }
