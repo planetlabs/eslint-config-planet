@@ -11,7 +11,7 @@
     "comma-style": 2,
     "default-case": 2,
     "dot-notation": [2, {"allowPattern": "^[a-z]+(_[a-z]+)+$"}],
-    "indent": [2, 2],
+    "indent": [2, 2, {"SwitchCase": 1}],
     "jsx-quotes": 2,
     "no-cond-assign": 2,
     "no-console": 2,
