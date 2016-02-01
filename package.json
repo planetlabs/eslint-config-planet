@@ -12,8 +12,11 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "code": "^1.5.0",
-    "eslint": "^1.6.0",
-    "lab": "^6.2.0"
+    "code": "2.1.0",
+    "eslint": "2.0.0-beta.3",
+    "lab": "8.2.0"
+  },
+  "eslintConfig": {
+    "extends": "./config/base.json"
   }
 }
