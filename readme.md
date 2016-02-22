@@ -8,15 +8,17 @@ To make use of this config, install ESLint and this package as a development dep
 
     npm install eslint eslint-config-planet --save-dev
 
-Next, create a `.eslintrc` file at the root of your project.  At a minimum, this config file must include an `extends` member:
+Next, add an `eslintConfig` member to your project's `package.json`.  At a minimum, this config file must include an `extends` member:
 
 ```json
 {
-  "extends": "planet"
+  "eslintConfig": {
+    "extends": "planet"
+  }
 }
 ```
 
-See the ESLint [configuration guide](http://eslint.org/docs/user-guide/configuring) for details on additional configuration options.  Any rules configured in your `.eslintrc` file will override those provided by the `eslint-config-planet` package.
+See the ESLint [configuration guide](http://eslint.org/docs/user-guide/configuring) for details on additional configuration options.  Any rules configured in your `package.json` file will override those provided by the `eslint-config-planet` package.
 
 ### Use
 
@@ -36,15 +38,7 @@ With this `pretest` entry in your `package.json`, ESLint will run on all JavaScr
 
 See the ESLint [CLI guide](http://eslint.org/docs/user-guide/command-line-interface) for additional options when running ESLint.
 
-In addition to running the linter when your tests are run, you should configure your editor to run the linter as well.  For Sublime Text, install the [SublimeLinter-contrib-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint) plugin.
-
-The `SublimeLinter` plugin can be configured to show lint errors on save.  Edit your `SublimeLinter` user preferences to include the following:
-
-```json
-  {
-    "show_errors_on_save": true
-  }
-```
+In addition to running the linter when your tests are run, you should configure your editor to run the linter as well.  See the [ESLint integration page](http://eslint.org/docs/user-guide/integrations#editors) to find details on configuring your editor to warn you of ESLint errors.
 
 ### Profiles
 
@@ -54,10 +48,12 @@ The `eslint-config-planet` package includes a number of ESLint configuration pro
 
 The "base" config is suitable for Node projects or browser-based projects using a CommonJS module loader (e.g. [Browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)).
 
-Example `.eslintrc`:
+Example configuration in `package.json`:
 ```json
 {
-  "extends": "planet"
+  "eslintConfig": {
+    "extends": "planet"
+  }
 }
 ```
 
@@ -67,10 +63,17 @@ The `planet/react` config is suitable for projects using [React](https://faceboo
 
     npm install eslint-plugin-react --save-dev
 
-Then your minimal `.eslintrc` would look like this:
+Then your minimal configuration in `package.json` would look like this:
 ```json
 {
-  "extends": "planet/react"
+  "eslintConfig": {
+    "extends": "planet/react"
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+  }
 }
 ```
 
