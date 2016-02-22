@@ -67,7 +67,7 @@ Then your minimal configuration in `package.json` would look like this:
 ```json
 {
   "eslintConfig": {
-    "extends": "planet/react"
+    "extends": "planet/react",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true
