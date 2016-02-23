@@ -76,9 +76,9 @@ Then your minimal configuration in `package.json` would look like this:
 
 ### Development
 
-To add another configuration profile, add a JSON file to the `config` directory (e.g. `config/new-config.json`).  This follows the format of an ESLint config file *except* that it does not have an `extends` property.  Add a script named like your profile to the root of the repository (e.g. `new-config.js`).  This script should merge the new configuration profile with whatever profile it extends.  Having the files structured this way allows consumers to use the new profile in their own `.eslintrc` files (e.g. with `"extends": "planet/new-config"`).
+To add another configuration profile, add a new config script to the root of the repository directory (e.g. `new-config.js`).  This script should export an ESLint config object and should have an `extends: './index.js' property`.  People using this config will add `extends/new-config` to their own ESLint config.
 
-You can add tests for your new profile or changes to an existing profile.  Ensure that tests pass with any changes.
+You should add and example for your new profile and ensure that tests pass with any changes.
 
     npm test
 
