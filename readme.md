@@ -40,6 +40,8 @@ See the ESLint [CLI guide](http://eslint.org/docs/user-guide/command-line-interf
 
 In addition to running the linter when your tests are run, you should configure your editor to run the linter as well.  See the [ESLint integration page](http://eslint.org/docs/user-guide/integrations#editors) to find details on configuring your editor to warn you of ESLint errors.
 
+See the [examples directory](https://github.com/planetlabs/eslint-config-planet/tree/master/examples) for more usage examples.
+
 ### Profiles
 
 The `eslint-config-planet` package includes a number of ESLint configuration profiles for different types of projects.
