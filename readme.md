@@ -4,7 +4,7 @@ This package provides shareable [ESLint](http://eslint.org/) configurations for 
 
 ### Installation
 
-To make use of this config, install ESLint and this package as a development dependency of your project:
+To make use of this config, install ESLint (>= 2.0) and this package as a development dependency of your project:
 
     npm install eslint eslint-config-planet --save-dev
 
@@ -40,6 +40,8 @@ See the ESLint [CLI guide](http://eslint.org/docs/user-guide/command-line-interf
 
 In addition to running the linter when your tests are run, you should configure your editor to run the linter as well.  See the [ESLint integration page](http://eslint.org/docs/user-guide/integrations#editors) to find details on configuring your editor to warn you of ESLint errors.
 
+See the [examples directory](https://github.com/planetlabs/eslint-config-planet/tree/master/examples) for more usage examples.
+
 ### Profiles
 
 The `eslint-config-planet` package includes a number of ESLint configuration profiles for different types of projects.
@@ -67,21 +69,16 @@ Then your minimal configuration in `package.json` would look like this:
 ```json
 {
   "eslintConfig": {
-    "extends": "planet/react",
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    }
+    "extends": "planet/react"
   }
 }
 ```
 
 ### Development
 
-To add another configuration profile, add a JSON file to the `config` directory (e.g. `config/new-config.json`).  This follows the format of an ESLint config file *except* that it does not have an `extends` property.  Add a script named like your profile to the root of the repository (e.g. `new-config.js`).  This script should merge the new configuration profile with whatever profile it extends.  Having the files structured this way allows consumers to use the new profile in their own `.eslintrc` files (e.g. with `"extends": "planet/new-config"`).
+To add another configuration profile, add a new config script to the root of the repository directory (e.g. `new-config.js`).  This script should export an ESLint config object and should have an `extends: './index.js' property`.  People using this config will add `extends/new-config` to their own ESLint config.
 
-You can add tests for your new profile or changes to an existing profile.  Ensure that tests pass with any changes.
+You should add and example for your new profile and ensure that tests pass with any changes.
 
     npm test
 
