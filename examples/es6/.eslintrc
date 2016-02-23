@@ -1,9 +1,3 @@
 {
-  "extends": "../../index.js", // this would be "planet" in your config
-  "env": {
-    "es6": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 6
-  }
+  "extends": "../../index.js" // this would be "planet" in your config
 }
