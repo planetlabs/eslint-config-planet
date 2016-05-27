@@ -12,8 +12,8 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "eslint": "2.2.0",
-    "eslint-plugin-react": "^4.0.0"
+    "eslint": "2.11.0",
+    "eslint-plugin-react": "^5.1.1"
   },
   "peerDependencies": {
     "eslint": ">= 2.0"
