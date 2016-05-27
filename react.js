@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     'react/jsx-boolean-value': 2,
+    'react/jsx-key': 2,
     'react/jsx-no-undef': 2,
     'react/jsx-sort-props': 2,
     'react/jsx-uses-react': 2,
