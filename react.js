@@ -12,6 +12,7 @@ module.exports = {
     'react/jsx-boolean-value': 2,
     'react/jsx-curly-spacing': 2,
     'react/jsx-equals-spacing': 2,
+    'react/jsx-indent': [2, 2],
     'react/jsx-key': 2,
     'react/jsx-no-undef': 2,
     'react/jsx-sort-props': 2,
