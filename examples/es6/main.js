@@ -20,7 +20,7 @@ if (require.main === module) {
   main(paths).then(contents => {
     contents.forEach((content, index) => {
       process.stdout.write(`${paths[index]}:\n${content}\n`);
-    })
+    });
   }).catch(err => {
     process.stderr.write(`Failed: ${err.message}`);
   });

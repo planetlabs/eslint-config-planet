@@ -50,6 +50,8 @@ module.exports = {
     'no-use-before-define': [2, 'nofunc'],
     'object-curly-spacing': 2,
     'quotes': [2, 'single'],
+    'semi': 2,
+    'semi-spacing': 2,
     'space-before-blocks': 2,
     'space-before-function-paren': [2, 'never'],
     'space-in-parens': 2,
