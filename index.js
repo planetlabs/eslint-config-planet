@@ -11,6 +11,7 @@ module.exports = {
     'comma-dangle': [2, 'never'],
     'comma-spacing': 2,
     'comma-style': 2,
+    'curly': 2,
     'default-case': 2,
     'dot-notation': [2, {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
     'indent': [2, 2, {SwitchCase: 1}],
