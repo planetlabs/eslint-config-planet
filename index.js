@@ -14,6 +14,7 @@ module.exports = {
     'curly': 2,
     'default-case': 2,
     'dot-notation': [2, {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
+    'eqeqeq': 2,
     'indent': [2, 2, {SwitchCase: 1}],
     'jsx-quotes': 2,
     'keyword-spacing': 2,
