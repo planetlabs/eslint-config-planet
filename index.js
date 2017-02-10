@@ -6,6 +6,8 @@ module.exports = {
   },
   rules: {
     'array-bracket-spacing': 2,
+    'array-callback-return': 2,
+    'arrow-parens': [2, 'as-needed'],
     'block-scoped-var': 2,
     'brace-style': 2,
     'comma-dangle': [2, 'never'],
