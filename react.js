@@ -1,5 +1,8 @@
 module.exports = {
-  extends: './index.js',
+  extends: [
+    './index.js',
+    'prettier/react'
+  ],
   plugins: [
     'react'
   ],
@@ -10,16 +13,12 @@ module.exports = {
   },
   rules: {
     'react/jsx-boolean-value': 2,
-    'react/jsx-curly-spacing': 2,
-    'react/jsx-equals-spacing': 2,
-    'react/jsx-indent': [2, 2],
     'react/jsx-key': 2,
     'react/jsx-no-duplicate-props': 2,
     'react/jsx-no-undef': 2,
     'react/jsx-sort-props': 2,
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
-    'react/jsx-wrap-multilines': 2,
     'react/no-array-index-key': 2,
     'react/no-children-prop': 2,
     'react/no-did-mount-set-state': 2,
