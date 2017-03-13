@@ -1,25 +1,25 @@
 module.exports = {
+  extends: [
+    'prettier'
+  ],
+  plugins: [
+    'prettier'
+  ],
   env: {
     node: true,
     browser: true,
     es6: true
   },
   rules: {
-    'array-bracket-spacing': 2,
+    'prettier/prettier': [
+      2, {singleQuote: true, bracketSpacing: false}
+    ],
     'array-callback-return': 2,
-    'arrow-parens': [2, 'as-needed'],
     'block-scoped-var': 2,
-    'brace-style': 2,
-    'comma-dangle': [2, 'never'],
-    'comma-spacing': 2,
-    'comma-style': 2,
     'curly': 2,
     'default-case': 2,
     'dot-notation': [2, {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
     'eqeqeq': 2,
-    'indent': [2, 2, {SwitchCase: 1}],
-    'jsx-quotes': 2,
-    'keyword-spacing': 2,
     'no-case-declarations': 2,
     'no-cond-assign': 2,
     'no-console': 2,
@@ -34,14 +34,11 @@ module.exports = {
     'no-eq-null': 2,
     'no-ex-assign': 2,
     'no-extra-boolean-cast': 2,
-    'no-extra-semi': 2,
     'no-fallthrough': 2,
     'no-func-assign': 2,
     'no-inner-declarations': [2, 'functions'],
     'no-invalid-regexp': 2,
     'no-irregular-whitespace': 2,
-    'no-mixed-spaces-and-tabs': [2, false],
-    'no-multiple-empty-lines': 2,
     'no-negated-in-lhs': 2,
     'no-obj-calls': 2,
     'no-octal': 2,
@@ -56,15 +53,6 @@ module.exports = {
     'no-unsafe-finally': 2,
     'no-unused-vars': [2, {vars: 'all', args: 'none'}],
     'no-use-before-define': [2, 'nofunc'],
-    'object-curly-spacing': 2,
-    'quotes': [2, 'single'],
-    'semi': 2,
-    'semi-spacing': 2,
-    'space-before-blocks': 2,
-    'space-before-function-paren': [2, 'never'],
-    'space-in-parens': 2,
-    'space-infix-ops': 2,
-    'space-unary-ops': 2,
     'strict': 0,
     'use-isnan': 2,
     'valid-typeof': 2
