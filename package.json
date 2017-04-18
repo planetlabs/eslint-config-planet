@@ -4,7 +4,10 @@
   "description": "ESLint config for Planet projects",
   "main": "index.js",
   "scripts": {
-    "test": "eslint examples"
+    "test": "npm run check-es6 && npm run check-react && eslint examples",
+    "check-es6": "eslint --print-config examples/es6/.eslintrc | eslint-config-prettier-check",
+    "check-react": "eslint --print-config examples/react/.eslintrc | eslint-config-prettier-check",
+    "fix-examples": "eslint --fix examples"
   },
   "license": "Apache-2.0",
   "repository": {
@@ -17,5 +20,10 @@
   },
   "peerDependencies": {
     "eslint": ">= 2.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "1.5.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "prettier": "^1.1.0"
   }
 }
