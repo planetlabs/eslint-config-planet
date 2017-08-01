@@ -16,7 +16,7 @@ module.exports = {
     'react/jsx-key': "error",
     'react/jsx-no-duplicate-props': "error",
     'react/jsx-no-undef': "error",
-    'react/jsx-sort-props': "error",
+    'react/jsx-sort-props': "off",
     'react/jsx-uses-react': "error",
     'react/jsx-uses-vars': "error",
     'react/no-array-index-key': "error",
@@ -30,6 +30,6 @@ module.exports = {
     'react/no-unused-prop-types': "error",
     'react/prop-types': "error",
     'react/react-in-jsx-scope': "error",
-    'react/sort-prop-types': "error"
+    'react/sort-prop-types': "off"
   }
 };
