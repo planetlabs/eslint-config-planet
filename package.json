@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-planet",
-  "version": "13.0.1",
+  "version": "14.0.0",
   "description": "ESLint config for Planet projects",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,15 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "eslint": "3.15.0",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint": "^4.3.0",
+    "eslint-plugin-react": "^7.1.0"
   },
   "peerDependencies": {
-    "eslint": ">= 2.0"
+    "eslint": ">= 4.0"
   },
   "dependencies": {
-    "eslint-config-prettier": "1.5.0",
-    "eslint-plugin-prettier": "2.0.1",
-    "prettier": "1.1.0"
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "prettier": "^1.5.3"
   }
 }
