@@ -24,7 +24,6 @@ module.exports = {
     'react/no-did-mount-set-state': "error",
     'react/no-did-update-set-state': "error",
     'react/no-direct-mutation-state': "error",
-    'react/no-multi-comp': "error",
     'react/no-unescaped-entities': "error",
     'react/no-unknown-property': "error",
     'react/no-unused-prop-types': "error",
