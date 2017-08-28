@@ -55,6 +55,7 @@ module.exports = {
     'no-use-before-define': ["error", 'nofunc'],
     'strict': "off",
     'use-isnan': "error",
-    'valid-typeof': "error"
+    'valid-typeof': "error",
+    'prefer-const': "error"
   }
 };
