@@ -4,7 +4,8 @@
   "description": "ESLint config for Planet projects",
   "main": "index.js",
   "scripts": {
-    "test": "npm run check-es6 && npm run check-react && eslint examples",
+    "lint": "eslint examples",
+    "test": "npm run check-es6 && npm run check-react && npm run lint",
     "check-es6": "eslint --print-config examples/es6/.eslintrc | eslint-config-prettier-check",
     "check-react": "eslint --print-config examples/react/.eslintrc | eslint-config-prettier-check",
     "fix-examples": "eslint --fix examples"
@@ -15,15 +16,15 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint": "^4.5.0",
+    "eslint-plugin-react": "^7.3.0"
   },
   "peerDependencies": {
     "eslint": ">= 4.0"
   },
   "dependencies": {
     "eslint-config-prettier": "^2.3.0",
-    "eslint-plugin-prettier": "^2.1.2",
-    "prettier": "^1.5.3"
+    "eslint-plugin-prettier": "^2.2.0",
+    "prettier": "^1.6.0"
   }
 }
