@@ -52,7 +52,11 @@ module.exports = {
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
-    'no-unused-vars': ['error', {vars: 'all', args: 'none'}],
+    'no-unused-vars': ['error', {
+      vars: 'all',
+      args: 'after-used',
+      ignoreRestSiblings: true
+    }],
     'no-use-before-define': ['error', 'nofunc'],
     strict: 'off',
     'use-isnan': 'error',
