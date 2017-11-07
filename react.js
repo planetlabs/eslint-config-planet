@@ -7,6 +7,7 @@ module.exports = {
     }
   },
   rules: {
+    'react/display-name': 'off',
     'react/jsx-boolean-value': 'error',
     'react/jsx-key': 'error',
     'react/jsx-no-duplicate-props': 'error',
