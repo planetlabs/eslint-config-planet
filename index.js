@@ -43,6 +43,7 @@ module.exports = {
     'no-negated-in-lhs': 'error',
     'no-obj-calls': 'error',
     'no-octal': 'error',
+    'no-param-reassign': ['error', {props: true}],
     'no-process-exit': 'off',
     'no-redeclare': 'error',
     'no-regex-spaces': 'error',
