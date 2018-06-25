@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['prettier'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'import'],
   env: {
     node: true,
     browser: true,
@@ -24,6 +24,9 @@ module.exports = {
     'default-case': 'error',
     'dot-notation': ['error', {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
     eqeqeq: 'error',
+    'import/no-unresolved': ['error', {commonjs: true}],
+    'import/named': 'error',
+    'import/default': 'error',
     'no-case-declarations': 'error',
     'no-cond-assign': 'error',
     'no-console': 'error',
