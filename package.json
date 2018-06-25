@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "eslint": "^4.6.1",
-    "eslint-plugin-react": "^7.3.0"
+    "eslint-plugin-react": "^7.3.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "peerDependencies": {
     "eslint": ">= 4.0"
