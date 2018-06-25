@@ -3,8 +3,8 @@ module.exports = {
   plugins: ['react'],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
     'react/jsx-boolean-value': 'error',
@@ -24,6 +24,6 @@ module.exports = {
     'react/no-unused-prop-types': 'error',
     'react/prop-types': 'error',
     'react/react-in-jsx-scope': 'error',
-    'react/sort-prop-types': 'off'
-  }
+    'react/sort-prop-types': 'off',
+  },
 };

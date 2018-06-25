@@ -4,17 +4,20 @@ module.exports = {
   env: {
     node: true,
     browser: true,
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: '2017',
     sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    }
+      experimentalObjectRestSpread: true,
+    },
   },
   rules: {
-    'prettier/prettier': ['error', {singleQuote: true, bracketSpacing: false}],
+    'prettier/prettier': [
+      'error',
+      {singleQuote: true, bracketSpacing: false, trailingComma: 'es5'},
+    ],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     curly: 'error',
@@ -58,6 +61,6 @@ module.exports = {
     strict: 'off',
     'use-isnan': 'error',
     'valid-typeof': 'error',
-    'prefer-const': 'error'
-  }
+    'prefer-const': 'error',
+  },
 };
