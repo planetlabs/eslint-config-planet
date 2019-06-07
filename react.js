@@ -6,6 +6,11 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'react/jsx-boolean-value': 'error',
     'react/jsx-key': 'error',
