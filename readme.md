@@ -61,11 +61,9 @@ Example configuration in `package.json`:
 
 #### `planet/react`
 
-The `planet/react` config is suitable for projects using [React](https://facebook.github.io/react/).  This extends the base config to include the React plugin, enable JSX parsing, and run React specific rules.  To use this profile, you'll need to install the `eslint-plugin-react` package:
+The `planet/react` config is suitable for projects using [React](https://facebook.github.io/react/).  This extends the base config to include the React plugin, enable JSX parsing, and run React specific rules.
 
-    npm install eslint-plugin-react --save-dev
-
-Then your minimal configuration in `package.json` would look like this:
+To use the `planet/react` profile, add the following to your `package.json`:
 ```json
 {
   "eslintConfig": {

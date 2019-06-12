@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import ReactDOM from 'react-dom';
+import {string} from 'prop-types';
 
-var HelloMessage = React.createClass({
-  propTypes: {
-    name: React.PropTypes.string.isRequired,
-  },
+function HelloMessage({name}) {
+  const [greeting, setGreeting] = useState('Hello');
 
-  render: function() {
-    return <div>Hello {this.props.name}</div>;
-  },
-});
+  const onClick = useCallback(() => {
+    setGreeting('Goodbye');
+  }, [setGreeting]);
+
+  return (
+    <div onClick={onClick}>
+      {greeting} {name}
+    </div>
+  );
+}
+
+HelloMessage.propTypes = {
+  name: string.isRequired,
+};
 
 ReactDOM.render(<HelloMessage name="John" />, document.getElementById('root'));
