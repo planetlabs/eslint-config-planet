@@ -58,6 +58,7 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unused-vars': ['error', {ignoreRestSiblings: true}],
     'no-use-before-define': ['error', 'nofunc'],
+    'no-var': 'error',
     strict: 'off',
     'use-isnan': 'error',
     'valid-typeof': 'error',
