@@ -17,6 +17,10 @@ function main(paths) {
   );
 }
 
+exports.modifyProps = props => {
+  props.foo = 'bar';
+};
+
 if (require.main === module) {
   const paths = ['main.js', '.eslintrc'].map(name =>
     path.join(__dirname, name)
