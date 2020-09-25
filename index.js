@@ -31,6 +31,7 @@ module.exports = {
     'import/default': 'error',
     'no-case-declarations': 'error',
     'no-cond-assign': 'error',
+    'no-const-assign': 'error',
     'no-console': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
