@@ -13,7 +13,12 @@ module.exports = {
   rules: {
     'prettier/prettier': [
       'error',
-      {singleQuote: true, bracketSpacing: false, trailingComma: 'es5'},
+      {
+        singleQuote: true,
+        bracketSpacing: false,
+        trailingComma: 'es5',
+        arrowParens: 'avoid',
+      },
     ],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
@@ -26,6 +31,7 @@ module.exports = {
     'import/default': 'error',
     'no-case-declarations': 'error',
     'no-cond-assign': 'error',
+    'no-const-assign': 'error',
     'no-console': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',

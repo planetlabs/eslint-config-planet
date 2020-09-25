@@ -15,22 +15,22 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
+    "eslint": "^7.9.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
-    "eslint": ">= 6.4"
+    "eslint": ">= 7"
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^2.0.1",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
-    "prettier": "^1.18.2"
+    "prettier": "^2.1.2"
   },
   "eslintConfig": {
     "extends": "./index.js"
