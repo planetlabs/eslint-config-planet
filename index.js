@@ -13,7 +13,12 @@ module.exports = {
   rules: {
     'prettier/prettier': [
       'error',
-      {singleQuote: true, bracketSpacing: false, trailingComma: 'es5'},
+      {
+        singleQuote: true,
+        bracketSpacing: false,
+        trailingComma: 'es5',
+        arrowParens: 'avoid',
+      },
     ],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
