@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
+import foo from './local-module';
+
 const main = paths =>
   Promise.all(
     paths.map(name => {
@@ -17,7 +19,7 @@ const main = paths =>
   );
 
 exports.modifyProps = props => {
-  props.foo = 'bar';
+  props.foo = foo;
 };
 
 if (require.main === module) {
