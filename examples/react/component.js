@@ -16,8 +16,6 @@ const HelloMessage = ({name}) => {
   );
 };
 
-HelloMessage.propTypes = {
-  name: string.isRequired,
-};
+HelloMessage.propTypes = {name: string.isRequired};
 
 ReactDOM.render(<HelloMessage name="John" />, document.getElementById('root'));
