@@ -4,7 +4,7 @@ This package provides shareable [ESLint](http://eslint.org/) configurations for 
 
 ### Installation
 
-To make use of this config, install ESLint (>= 2.0) and this package as a development dependency of your project:
+To make use of this config, install ESLint (>= 7.9) and this package as a development dependency of your project:
 
     npm install eslint eslint-config-planet --save-dev
 
