@@ -86,7 +86,7 @@ Publishing a new minor release would look like this:
 
     # commit and push any changes first
     npm version minor # this bumps the package.json version number and tags
-    git push --tags origin master
+    git push --tags origin main
     npm publish
 
 [![Current Status](https://secure.travis-ci.org/planetlabs/eslint-config-planet.png?branch=master)](https://travis-ci.org/planetlabs/eslint-config-planet)
