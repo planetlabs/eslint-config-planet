@@ -2,7 +2,7 @@ import React, {useCallback, useState} from 'react';
 import ReactDOM from 'react-dom';
 import {string} from 'prop-types';
 
-function HelloMessage({name}) {
+const HelloMessage = ({name}) => {
   const [greeting, setGreeting] = useState('Hello');
 
   const onClick = useCallback(() => {
@@ -14,7 +14,7 @@ function HelloMessage({name}) {
       {greeting} {name}
     </div>
   );
-}
+};
 
 HelloMessage.propTypes = {
   name: string.isRequired,
