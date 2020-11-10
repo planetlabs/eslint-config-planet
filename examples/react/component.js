@@ -10,7 +10,7 @@ const HelloMessage = ({name}) => {
   }, [setGreeting]);
 
   return (
-    <div onClick={onClick}>
+    <div data-attribute="yes" onClick={onClick}>
       {greeting} {name}
     </div>
   );

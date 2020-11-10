@@ -1,24 +1,18 @@
 module.exports = {
   extends: ['./index.js', 'prettier/react'],
-  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
   },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+  plugins: ['react', 'react-hooks'],
   rules: {
-    'react-hooks/exhaustive-deps': 'warn',
-    'react-hooks/rules-of-hooks': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-key': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
-    'react/jsx-sort-props': 'off',
+    'react/jsx-sort-default-props': 'error',
+    'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-array-index-key': 'error',
@@ -32,6 +26,14 @@ module.exports = {
     'react/no-will-update-set-state': 'error',
     'react/prop-types': 'error',
     'react/react-in-jsx-scope': 'error',
-    'react/sort-prop-types': 'off',
+    'react/sort-comp': 'error',
+    'react/sort-prop-types': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };
