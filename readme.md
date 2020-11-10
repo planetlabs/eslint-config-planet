@@ -4,7 +4,7 @@ This package provides shareable [ESLint](http://eslint.org/) configurations for 
 
 ### Installation
 
-To make use of this config, install ESLint (>= 2.0) and this package as a development dependency of your project:
+To make use of this config, install ESLint (>= 7.9) and this package as a development dependency of your project:
 
     npm install eslint eslint-config-planet --save-dev
 
@@ -86,7 +86,7 @@ Publishing a new minor release would look like this:
 
     # commit and push any changes first
     npm version minor # this bumps the package.json version number and tags
-    git push --tags origin master
+    git push --tags origin main
     npm publish
 
 [![Current Status](https://secure.travis-ci.org/planetlabs/eslint-config-planet.png?branch=master)](https://travis-ci.org/planetlabs/eslint-config-planet)
