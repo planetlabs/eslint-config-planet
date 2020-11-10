@@ -1,7 +1,6 @@
+import foo from './local-module';
 import fs from 'fs';
 import path from 'path';
-
-import foo from './local-module';
 
 const main = paths =>
   Promise.all(
