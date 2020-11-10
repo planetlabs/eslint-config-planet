@@ -19,6 +19,8 @@ module.exports = {
     eqeqeq: 'error',
     'import/default': 'error',
     'import/named': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-self-import': 'error',
     'import/no-unresolved': ['error', {commonjs: true}],
     'no-case-declarations': 'error',
     'no-cond-assign': 'error',
