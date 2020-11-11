@@ -69,8 +69,6 @@ module.exports = {
         trailingComma: 'es5',
       },
     ],
-    'sort-keys': ['error', 'asc', {caseSensitive: false, natural: true}],
-    strict: 'off',
     'sort-imports-es6-autofix/sort-imports-es6': [
       'error',
       {
@@ -79,6 +77,8 @@ module.exports = {
         memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
       },
     ],
+    'sort-keys': ['error', 'asc', {caseSensitive: false, natural: true}],
+    strict: 'off',
     'use-isnan': 'error',
     'valid-typeof': 'error',
   },
