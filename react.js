@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['./index.js', 'prettier/react'],
-  plugins: ['react', 'sort-imports-es6-autofix', 'react-hooks'],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -33,13 +33,5 @@ module.exports = {
     'react/prop-types': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/sort-prop-types': 'off',
-    'sort-imports-es6-autofix/sort-imports-es6': [
-      'error',
-      {
-        ignoreCase: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
-      },
-    ],
   },
 };
