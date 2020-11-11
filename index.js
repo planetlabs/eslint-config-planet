@@ -18,7 +18,10 @@ module.exports = {
     'dot-notation': ['error', {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
     eqeqeq: 'error',
     'import/default': 'error',
+    'import/first': 'error',
     'import/named': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-self-import': 'error',
     'import/no-unresolved': ['error', {commonjs: true}],
     'import/order': [
       'error',
