@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['prettier'],
-  plugins: ['prettier', 'import'],
+  plugins: ['import', 'prettier', 'sort-imports-es6-autofix'],
   env: {
     node: true,
     browser: true,
@@ -11,28 +11,19 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-        bracketSpacing: false,
-        trailingComma: 'es5',
-        arrowParens: 'avoid',
-      },
-    ],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     curly: 'error',
     'default-case': 'error',
     'dot-notation': ['error', {allowPattern: '^[a-z]+(_[a-z]+)+$'}],
     eqeqeq: 'error',
-    'import/no-unresolved': ['error', {commonjs: true}],
-    'import/named': 'error',
     'import/default': 'error',
+    'import/named': 'error',
+    'import/no-unresolved': ['error', {commonjs: true}],
     'no-case-declarations': 'error',
     'no-cond-assign': 'error',
-    'no-const-assign': 'error',
     'no-console': 'error',
+    'no-const-assign': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-delete-var': 'error',
@@ -65,9 +56,26 @@ module.exports = {
     'no-unused-vars': ['error', {ignoreRestSiblings: true}],
     'no-use-before-define': ['error', 'nofunc'],
     'no-var': 'error',
+    'prefer-const': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        bracketSpacing: false,
+        trailingComma: 'es5',
+        arrowParens: 'avoid',
+      },
+    ],
     strict: 'off',
+    'sort-imports-es6-autofix/sort-imports-es6': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'],
+      },
+    ],
     'use-isnan': 'error',
     'valid-typeof': 'error',
-    'prefer-const': 'error',
   },
 };

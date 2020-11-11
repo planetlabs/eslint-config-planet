@@ -1,8 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import foo from './local-module';
+import fs from 'fs';
+import path from 'path';
 
-function main(paths) {
-  return Promise.all(
+const main = paths =>
+  Promise.all(
     paths.map(name => {
       return new Promise((resolve, reject) => {
         fs.readFile(name, (err, data) => {
@@ -15,10 +16,9 @@ function main(paths) {
       });
     })
   );
-}
 
 exports.modifyProps = props => {
-  props.foo = 'bar';
+  props.foo = foo;
 };
 
 if (require.main === module) {
