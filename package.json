@@ -3,6 +3,7 @@
   "version": "20.0.0",
   "description": "ESLint config for Planet projects",
   "main": "index.js",
+  "files": ["index.js", "react.js"],
   "scripts": {
     "lint": "eslint . examples",
     "test": "npm run check-es6 && npm run check-react && npm run lint",
