@@ -17,14 +17,16 @@ const main = paths =>
     })
   );
 
+const testPrintWidth = '1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515';
+
 exports.modifyProps = props => {
   props.foo = foo;
+  props.bar = testPrintWidth;
 };
 
 if (require.main === module) {
-  const paths = ['main.js', '.eslintrc'].map(name =>
-    path.join(__dirname, name)
-  );
+  const paths = ['main.js', '.eslintrc'].map(name => path.join(__dirname, name));
+
   main(paths)
     .then(contents => {
       contents.forEach((content, index) => {
