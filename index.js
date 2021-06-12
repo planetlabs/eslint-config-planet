@@ -23,6 +23,16 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/no-self-import': 'error',
     'import/no-unresolved': ['error', {commonjs: true}],
+    'import/order': [
+      'error',
+      {
+        groups: [
+          ['builtin', 'external'],
+          ['internal', 'parent', 'sibling', 'index'],
+        ],
+        'newlines-between': 'always',
+      },
+    ],
     'no-case-declarations': 'error',
     'no-cond-assign': 'error',
     'no-console': 'error',
