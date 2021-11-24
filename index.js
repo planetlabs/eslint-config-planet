@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['prettier'],
+  extends: ['prettier', 'prettier/prettier'],
   plugins: ['import', 'prettier', 'sort-imports-es6-autofix'],
   env: {
     node: true,

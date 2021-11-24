@@ -10,8 +10,8 @@
   "scripts": {
     "lint": "eslint . examples",
     "test": "npm run check-es6 && npm run check-react && npm run lint",
-    "check-es6": "eslint --print-config examples/es6/.eslintrc | eslint-config-prettier-check",
-    "check-react": "eslint --print-config examples/react/.eslintrc | eslint-config-prettier-check"
+    "check-es6": "eslint-config-prettier index.js examples/es6/.eslintrc",
+    "check-react": "eslint-config-prettier index.js examples/react/.eslintrc"
   },
   "license": "Apache-2.0",
   "repository": {
@@ -19,22 +19,22 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "eslint": "^7.9.0",
+    "eslint": "^7.32.0",
     "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "peerDependencies": {
     "eslint": ">= 7"
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
-    "prettier": "^2.1.2"
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "prettier": "^2.4.1"
   },
   "eslintConfig": {
     "extends": "./index.js"
