@@ -1,13 +1,12 @@
 module.exports = {
-  extends: ['prettier', 'prettier/prettier'],
-  plugins: ['import', 'prettier', 'sort-imports-es6-autofix'],
+  plugins: ['import', 'sort-imports-es6-autofix', 'prettier'],
   env: {
     node: true,
     browser: true,
     es6: true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
@@ -65,7 +64,6 @@ module.exports = {
       {
         singleQuote: true,
         bracketSpacing: false,
-        trailingComma: 'es5',
         arrowParens: 'avoid',
       },
     ],
