@@ -65,6 +65,7 @@ module.exports = {
       {
         singleQuote: true,
         bracketSpacing: false,
+        printWidth: 120,
         trailingComma: 'es5',
         arrowParens: 'avoid',
       },
