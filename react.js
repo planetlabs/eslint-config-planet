@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./index.js', 'prettier/react'],
+  extends: ['./index.js'],
   plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
@@ -15,6 +15,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-boolean-value': 'error',
+    'react/jsx-curly-brace-presence': 'error',
     'react/jsx-key': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',

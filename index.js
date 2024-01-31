@@ -26,6 +26,7 @@ module.exports = {
     'no-cond-assign': 'error',
     'no-console': 'error',
     'no-const-assign': 'error',
+    'no-constant-binary-expression': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-delete-var': 'error',
