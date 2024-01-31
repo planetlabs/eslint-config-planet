@@ -8,26 +8,24 @@ on:
     branches:
       - main
 
-env:
-  CI: true
-
 jobs:
-  run:
+  test:
+    name: Test
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node:
-          - 14
-
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v2
+      - name: Clone Repository
+        uses: actions/checkout@v4
 
-      - name: Set Node.js version
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: '20'
 
-      - run: npm ci
-      - run: npm test
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: npm test
+        env:
+          CI: true

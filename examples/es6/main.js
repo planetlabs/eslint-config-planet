@@ -14,7 +14,7 @@ const main = paths =>
           }
         });
       });
-    })
+    }),
   );
 
 exports.modifyProps = props => {
@@ -23,7 +23,7 @@ exports.modifyProps = props => {
 
 if (require.main === module) {
   const paths = ['main.js', '.eslintrc'].map(name =>
-    path.join(__dirname, name)
+    path.join(__dirname, name),
   );
   main(paths)
     .then(contents => {
