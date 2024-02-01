@@ -2,8 +2,8 @@ import React, {useCallback, useState} from 'react';
 import ReactDOM from 'react-dom';
 import {string} from 'prop-types';
 
-const HelloMessage = ({name}) => {
-  const [greeting, setGreeting] = useState('Hello');
+const HelloMessage = ({name, initialGreeting = 'Hello'}) => {
+  const [greeting, setGreeting] = useState(initialGreeting);
 
   const onClick = useCallback(() => {
     setGreeting('Goodbye');
@@ -17,7 +17,11 @@ const HelloMessage = ({name}) => {
 };
 
 HelloMessage.propTypes = {
+  initialGreeting: string,
   name: string.isRequired,
 };
 
-ReactDOM.render(<HelloMessage name="John" />, document.getElementById('root'));
+ReactDOM.render(
+  <HelloMessage name="John" initialGreeting="Hi" />,
+  document.getElementById('root')
+);
