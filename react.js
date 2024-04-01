@@ -35,4 +35,9 @@ module.exports = {
     'react/react-in-jsx-scope': 'error',
     'react/sort-prop-types': 'off',
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+    },
+  ],
 };
