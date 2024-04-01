@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-planet",
-  "version": "21.0.0",
+  "version": "21.1.0",
   "description": "ESLint config for Planet projects",
   "main": "index.js",
   "files": [
