@@ -2,6 +2,8 @@ module.exports = {
   extends: ['./index.js'],
   plugins: ['react', 'react-hooks'],
   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
