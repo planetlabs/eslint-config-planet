@@ -35,6 +35,10 @@ module.exports = {
     'react/no-will-update-set-state': 'error',
     'react/prop-types': 'error',
     'react/react-in-jsx-scope': 'error',
+    'react/require-default-props': [
+      'error',
+      {ignoreFunctionalComponents: true},
+    ],
     'react/sort-prop-types': 'off',
   },
   overrides: [
