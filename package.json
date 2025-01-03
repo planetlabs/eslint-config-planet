@@ -7,6 +7,7 @@
     "index.js",
     "react.js"
   ],
+  "type": "module",
   "scripts": {
     "lint": "eslint . examples",
     "test": "npm run lint"
@@ -17,23 +18,21 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^9.17.0",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "peerDependencies": {
-    "eslint": ">= 7"
+    "eslint": ">= 9"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
+    "@eslint/js": "^9.17.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "prettier": "^3.2.4"
-  },
-  "eslintConfig": {
-    "extends": "./index.js"
+    "prettier": "^3.4.2"
   }
 }

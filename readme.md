@@ -4,21 +4,20 @@ This package provides shareable [ESLint](http://eslint.org/) configurations for 
 
 ### Installation
 
-To make use of this config, install ESLint (>= 7.9) and this package as a development dependency of your project:
+To make use of this config, install ESLint (>= 9) and this package as a development dependency of your project:
 
     npm install eslint eslint-config-planet --save-dev
 
-Next, add an `eslintConfig` member to your project's `package.json`.  At a minimum, this config file must include an `extends` member:
+Next, add a `eslint.config.js` file in your project's root directory.  At a minimum, this config file must include the shared configuration:
 
-```json
-{
-  "eslintConfig": {
-    "extends": "planet"
-  }
-}
+```js
+import planetConfig from 'eslint-config-planet';
+
+export default [...planetConfig];
+
 ```
 
-See the ESLint [configuration guide](http://eslint.org/docs/user-guide/configuring) for details on additional configuration options.  Any rules configured in your `package.json` file will override those provided by the `eslint-config-planet` package.
+See the ESLint [configuration guide](https://eslint.org/docs/latest/use/configure/) for details on additional configuration options.  Any rules configured in your `eslint.config.js` file will override those provided by the `eslint-config-planet` package.
 
 ### Use
 
@@ -32,7 +31,7 @@ You should run the linter as part of (or before) your tests.  Assuming tests are
 }
 ```
 
-With this `pretest` entry in your `package.json`, ESLint will run on all JavaScript files in the `src` directory of your project using your `.eslintrc` config when tests are run:
+With this `pretest` entry in your `package.json`, ESLint will run on all JavaScript files in the `src` directory of your project using your `eslint.config.js` config when tests are run:
 
     npm test
 
@@ -50,31 +49,27 @@ The `eslint-config-planet` package includes a number of ESLint configuration pro
 
 The "base" config is suitable for Node projects or browser-based projects using a CommonJS module loader (e.g. [Browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)).
 
-Example configuration in `package.json`:
-```json
-{
-  "eslintConfig": {
-    "extends": "planet"
-  }
-}
+Example configuration in `eslint.config.js`:
+```js
+import planetConfig from 'eslint-config-planet';
+
+export default [...planetConfig];
 ```
 
 #### `planet/react`
 
 The `planet/react` config is suitable for projects using [React](https://facebook.github.io/react/).  This extends the base config to include the React plugin, enable JSX parsing, and run React specific rules.
 
-To use the `planet/react` profile, add the following to your `package.json`:
-```json
-{
-  "eslintConfig": {
-    "extends": "planet/react"
-  }
-}
+To use the `planet/react` profile, add the following to your `eslint.config.js`:
+```js
+import planetReactConfig from 'eslint-config-planet/react.js';
+
+export default [...planetReactConfig];
 ```
 
 ### Development
 
-To add another configuration profile, add a new config script to the root of the repository directory (e.g. `new-config.js`).  This script should export an ESLint config object and should have an `extends: './index.js' property`.  People using this config will add `extends/new-config` to their own ESLint config.
+To add another configuration profile, add a new config script to the root of the repository directory (e.g. `new-config.js`).  This script should export an ESLint config object and should include the `index.js` configuration.  People using this config will import via `eslint-config-planet/new-config.js` into their own ESLint config.
 
 You should add and example for your new profile and ensure that tests pass with any changes.
 
@@ -89,7 +84,7 @@ Publishing a new minor release would look like this:
     git push --tags origin main
     npm publish
 
-[![Current Status](https://secure.travis-ci.org/planetlabs/eslint-config-planet.png?branch=master)](https://travis-ci.org/planetlabs/eslint-config-planet)
+[![Current Status](https://secure.travis-ci.org/planetlabs/eslint-config-planet.png?branch=main)](https://travis-ci.org/planetlabs/eslint-config-planet)
 
 ### License
 
