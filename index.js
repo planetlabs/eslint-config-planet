@@ -8,7 +8,7 @@ export default [
   js.configs.recommended,
   importPlugin.flatConfigs.recommended,
   {
-    name: 'planet/recommnded',
+    name: 'planet/recommended',
     plugins: {
       prettier,
       'sort-imports-es6-autofix': sortImportPlugin,
