@@ -1,6 +1,6 @@
-import planetConfig from './index.js';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+import planetConfig from './index.js';
 
 export default [
   ...planetConfig,
