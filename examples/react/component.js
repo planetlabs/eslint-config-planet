@@ -1,6 +1,6 @@
+import {string} from 'prop-types';
 import React, {useCallback, useState} from 'react';
 import ReactDOM from 'react-dom';
-import {string} from 'prop-types';
 
 const HelloMessage = ({name}) => {
   const [greeting, setGreeting] = useState('Hello');
