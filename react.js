@@ -28,7 +28,7 @@ export default [
       },
     },
 
-    files: ['**/*.js', '**/*.jsx'],
+    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
 
     rules: {
       'react-hooks/exhaustive-deps': 'warn',
