@@ -9,8 +9,9 @@
   ],
   "type": "module",
   "scripts": {
-    "lint": "eslint . examples",
-    "test": "npm run lint"
+    "lint": "eslint . examples --ignore-pattern 'examples/fail/*'",
+    "pretest": "npm run lint",
+    "test": "node test.js"
   },
   "license": "Apache-2.0",
   "repository": {
@@ -18,6 +19,9 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@node-loader/babel": "^2.1.0",
     "eslint": "^9.17.0",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
