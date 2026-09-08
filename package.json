@@ -19,10 +19,10 @@
     "url": "git://github.com/planetlabs/eslint-config-planet.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.5",
-    "@babel/preset-react": "^7.28.5",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-react": "^8.0.1",
     "@node-loader/babel": "^2.1.0",
-    "eslint": "^9.17.0",
+    "eslint": "^10.9.1",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
